@@ -33,4 +33,4 @@ jobs:
       run: echo "First Workflow"
     - name: Test 2nd repo trigger
       run: |
-        curl -v -X POST -H "Accept: application/vnd.github.v3+json" -H "Authorization: token:${{ secrets.SECOND_REPO_PAT }}" "https://api.github.com/repos/panchal-yash/repo2/actions/workflows/SECOND_WORKFLOW.yaml/dispatches" -d  '{"ref":"main","inputs":{"pxc_version":"1" "pxc_glibc":"2" "pmm_image":"3"}}'
+        curl -v -X POST -H "Accept: application/vnd.github.v3+json" -H "Authorization: token:${{ secrets.SECOND_REPO_PAT }}" "https://api.github.com/repos/panchal-yash/repo2/actions/workflows/SECOND_WOKFLOW.yaml/dispatches" -d  '{"ref":"main","inputs":{"pxc_version":"1", "pxc_glibc":"2", "pmm_image":"3"}}'
